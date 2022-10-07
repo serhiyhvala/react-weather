@@ -6,7 +6,7 @@ import { Header } from './pages/shared/Header'
 
 const App = () => {
   return (
-    <div>
+    <div className='container'>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

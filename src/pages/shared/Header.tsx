@@ -6,12 +6,11 @@ import styles from './Header.module.scss'
 type Props = {}
 
 export const Header = (props: Props) => {
-
-    const options = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' }
-      ]
+  const options = [
+    { value: 'chocolate', label: 'Chocolate' },
+    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'vanilla', label: 'Vanilla' }
+  ]
 
   return (
     <header className={styles.header}>
@@ -24,8 +23,8 @@ export const Header = (props: Props) => {
       <div className={styles.wrapper}>
         <div className={styles.change_theme}>
           <GlobalSvgSelector id="change-theme" />
-          <Select options={options}/>
         </div>
+        <Select options={options} />
       </div>
     </header>
   )
