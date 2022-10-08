@@ -8,7 +8,7 @@ import { Header } from './pages/shared/Header'
 const App = () => {
   return (
     <div className="global_container">
-      <PopUp />
+      {/*<PopUp />*/}
       <div className="container">
         <Header />
         <Routes>
